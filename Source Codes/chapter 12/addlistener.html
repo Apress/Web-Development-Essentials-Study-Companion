@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button id="b1">Click</button>
+<button id="b2">Click</button>
+<div id="div"></div>
+
+<script>
+const btn1=document.getElementById("b1");
+const div=document.getElementById("div");
+
+btn1.addEventListener("click", myFunction);
+function myFunction() {
+  div.innerHTML+="Hello World<br>";
+}
+
+btn1.addEventListener("click", newFunction);
+function newFunction() {
+  div.innerHTML+="Hello World!<br>";
+}
+
+const btn2 = document.getElementById("b2");
+btn2.addEventListener("click", anotherFunction);
+function anotherFunction() {
+  btn1.removeEventListener("click", myFunction);
+  div.innerHTML="";
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<body>
+	<script>
+
+    let num1, num2, code, result;
+
+      num1=Number(prompt("enter a number"));
+      num2=Number(prompt("enter another number"));
+      code=Number(prompt("enter operation code 1-4"));
+
+      switch (code) {
+      case 1:
+      result=num1+num2;
+      break;
+      case 2:
+      result=num1-num2;
+      break;
+      case 3:
+      result=num1*num2;
+      break;
+      case 4:
+      result=num1/num2;
+      }
+      
+    document.write(`Result=${result}`);
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+<form action="/upload" method="get">
+    <input type="text" name="name" value="Raman">
+    <input type="text" name="age" value=20>
+<div>
+    <label for="email">Email address</label>
+    <input type="email" id="email" name="email">
+	  
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="password" minlength="8" required>
+</div>
+<div>
+    <input type="number" id="age" name="age" min="1" max="100">
+    <input type="date" id="date" name="date" value="2025-12-15">
+    <input type="range" id="volume" name="volume" min="1" max="10">
+</div>
+
+<div>
+<input type="radio" id="id1" name="GroupName" value="Option1"> 
+<label for="id1">Option 1</label>
+
+<input type="radio" id="id2" name="GroupName" value="Option2"> 
+<label for="id2">Option 2</label>
+
+<p>How do you want to receive OTP?</p>
+<input type="radio" id="sms" name="OTP" value="SMS" checked>
+<label for="sms">By SMS</label>
+
+<input type="radio" id="phone" name="OTP" value="Phone">
+<label for="phone">By Phone</label>
+
+<input type="radio" id="email" name="OTP" value="Email">
+<label for="email">By Email</label>
+
+<p>Which Languages Do You Know?</p>
+<input type="checkbox" id="java" name="java">
+<label for="java">Java</label>
+
+<input type="checkbox" id="python" name="python">
+<label for="python">Python</label>
+<input type="checkbox" id="js" name="js">
+<label for="js">JavaScript</label>
+</div>
+<div>
+
+<!--Datalist with input list-->        
+<input list="dl" name="browser">
+
+<datalist id="dl">
+  <option value="Chrome"></option>
+  <option value="Firefox"></option>
+  <option value="Safari"></option>
+  <option value="Edge"></option>
+</datalist>
+
+<!--Select Dropdown-->
+<select id="select" name="browser">
+  <option value="Chrome">Chrome</option>
+  <option value="Firefox">Firefox</option>
+  <option value="Safari">Safari</option>
+  <option value="Edge">Edge</option>
+</select>
+
+</div>
+<div>
+<input type="reset" value="Reset">
+    <input type = "submit">
+    </div>
+</form>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <!-- other form controls -->
+    <input type="file" id="file" name="file">
+    <input type = "submit">
+</form>
+
+  </body>
+</html>

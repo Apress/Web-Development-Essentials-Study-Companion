@@ -1,0 +1,34 @@
+<html>
+<body>
+	<script>
+
+function addition(num1, num2) { 
+  let add = num1+num2;  
+  return add;
+}
+let first, second, result;
+first = addition(10, 20);
+second = addition(30, 40);
+ result = addition(first, second);
+document.write(`Result: ${result}`);
+
+//arrow function 
+addition = (num1, num2) => { 
+  let add = num1+num2;  
+  return add;
+}
+first = addition(10, 20);
+second = addition(30, 40);
+result = addition(first, second);
+document.write(`Result: ${result}`);
+
+addition = (num1, num2) =>  num1+num2;
+first = addition(10, 20);
+second = addition(30, 40);
+result = addition(first, second);
+document.write(`Result: ${result}`);
+
+</script>
+
+</body>
+</html>

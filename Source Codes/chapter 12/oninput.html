@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>oninput Example</title>
+    </head>
+<body>
+<input type="password" id="txt" placeholder="Type here...">
+<div id="msg"></div>
+
+<script>
+const allowed = "abcdefghijklmnopqrstuvwxyz0123456789";
+
+const txt = document.getElementById("txt");
+txt.oninput = myfunction;
+
+function myfunction () {
+  const value = txt.value;
+  const msg = document.getElementById("msg");
+
+  for (let i = 0; i < value.length; i++) {
+    const ch = value[i].toLowerCase();
+
+    if (!allowed.includes(ch)) {
+      msg.innerHTML = "Only alphabets and digits allowed";
+      return;
+    }
+  }
+
+  msg.innerHTML = "";
+};
+</script>
+</body>
+</html>

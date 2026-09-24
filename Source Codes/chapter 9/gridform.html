@@ -1,0 +1,95 @@
+<!-- save the following as styles.css
+    body { font-family: Arial, sans-serif; }
+
+    .profile {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    /* Grid form layout */
+    form {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 15px;
+      align-items: center;
+    }
+
+    /* Use display:contents so each .form-row provides two grid items (label + control) */
+    .form-row { display: contents; }
+
+    .form-row label {
+      font-weight: bold;
+      padding-right: 10px;
+      align-self: center;
+    }
+
+    .form-row input,
+    .form-row textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea { min-height: 100px; }
+
+    .form-actions {
+      grid-column: 1 / -1;
+      justify-self: end;
+      display: flex;
+      gap: 10px;
+    }
+
+    button { padding: 8px 16px; }
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Flexbox Example</h1>
+<div class="profile">
+  <h1>Grid Form Example</h1>
+
+  <div class="profile">
+    <h2>User Profile</h2>
+
+    <form>
+      <div class="form-row">
+        <label for="fullname">Full Name</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Enter your name">
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Your email">
+      </div>
+
+      <div class="form-row">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="Enter phone number">
+      </div>
+
+      <div class="form-row">
+        <label for="about">About you</label>
+        <textarea id="about" name="about" placeholder="Describe yourself"></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="button">Cancel</button>
+        <button type="submit">Save</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+
+</html>

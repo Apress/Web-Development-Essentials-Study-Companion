@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+<body>
+    <p id="p1">Hello World </p>
+    
+
+<script>
+let element = document.getElementById("p1");
+console.log(element.innerText); // displays Hello World
+</script>
+<p>Finding HTML Elements by Tag Name.</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+<script>
+const paras = document.getElementsByTagName("p");
+for (let i = 0; i < paras.length; i++) {
+  console.log(`Paragraph ${i + 1}: ${paras[i].textContent}`);
+}
+
+</script>
+    <input type="checkbox" id="phy" name="sub" value="Physics" checked />
+    <label for="phy">Physics</label>
+
+    <input type="checkbox" id="che" name="sub" value="ChEmistry" />
+    <label for="che">Chemistry</label>
+
+    <input type="checkbox" id="math" name="sub" value="Maths" />
+    <label for="math">Maths</label>
+
+<script>
+btns = document.getElementsByName("sub");
+for(i=0;i<btns.length;i++){
+    console.log(btns[i].value +" IS "+ (btns[i].checked ));
+}
+</script>
+<h1 class="testclass">The Document Heading</h1>
+
+<p>This is the first paragraph.</p>
+<div class="testclass">
+  <p>This is a div element.</p>
+</div>
+<br>
+<div>
+  <p>This is another div element.</p>
+</div>
+<br>
+<section class="testclass">
+  <p>This is a section.</p>
+</section>
+
+<script>
+const collection = document.getElementsByClassName("testclass");
+for (let i = 0; i < collection.length; i++) {
+  console.log(collection[i].tagName + ": " + collection[i].innerText);
+}
+</script>
+
+
+</body>
+
+
+</html>

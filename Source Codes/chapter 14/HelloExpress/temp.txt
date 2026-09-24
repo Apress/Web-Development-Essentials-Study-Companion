@@ -1,0 +1,17 @@
+const function1 = function (req, res, next) {
+   console.log("before executing the route handler");
+   next();
+}
+app.get('/', function1, function (req, res) {
+   console.log("Hello Express");
+   res.send('Hello Express');
+});
+
+const function2 = function (req, res, next) {
+   console.log("after executing the route handler");
+   next();
+}
+app.get('/about', function2, function (req, res) {
+   console.log("About Express");
+   res.send('About Express');
+});

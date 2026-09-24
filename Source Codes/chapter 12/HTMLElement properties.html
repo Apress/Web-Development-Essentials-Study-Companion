@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="id1" style="color:blue;">This is a hidden  paragraph.</p>
+
+<script>
+node = document.getElementById("id1");
+console.log(node.textContent)
+let list = node.attributes;
+console.log(node.style.color);
+for (let atr of list) {
+  console.log(atr.name + ": " + atr.value);
+}
+
+</script>
+
+<div id="div1">
+<p>Hello World</p>
+</div>
+<script>
+const div = document.getElementById("div1");
+console.log(div.outerHTML);
+</script>
+<script>
+const element = document.getElementById("div1");
+element.outerHTML = "<h1 id='h1'>Hello World</h1>";
+const elem = document.getElementById("h1");
+console.log(elem.outerHTML);
+</script>
+
+</body>
+</body>

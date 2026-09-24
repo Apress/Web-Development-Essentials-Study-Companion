@@ -1,0 +1,42 @@
+<html>
+<body>
+	<script>
+        
+        let count=0;        
+        do {
+            document.write( "Hello, World!<br>");
+            count++;
+        } while ( count<5 );
+
+        for (let count = 1; count <= 5; count++) {
+            document.write("Hello World!<br/>");
+        }
+
+        let employee = {
+        name: "John Doe",
+        age: 30,
+        email: "john@example.com"
+        };
+        for (let key in employee) {
+        document.write(`Key: ${key} Value: ${employee[key]}<br>`);
+        }
+
+        let marks = [60, 50, 80, 70, 40];
+        let sum=0;
+        for (let mark of marks) {
+        sum += mark;
+        }
+        document.write("Sum: " + sum);
+
+        let message = "Hello World";
+
+        for (let char of message) {
+        document.write(char + "<br>");
+        }
+
+
+
+	</script>
+
+</body>
+</html>

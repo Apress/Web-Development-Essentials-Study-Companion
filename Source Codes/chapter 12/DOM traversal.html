@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="div1">
+<p>The main paragraph</p>
+  <div>
+  <p>The paragraph in the child div</p>
+  </div>
+</div>
+<script>
+const collection = document.getElementById("div1").children;
+let text = "";
+for (let i = 0; i < collection.length; i++) {
+  document.write(`Child tag: ${collection[i].tagName} <br>`);
+}
+</script>
+<ul id="Subjects">
+  <li id="s1">Physics</li>
+  <li id="s2">Chemistry</li>
+  <li id="s3">Maths</li>
+</ul>
+<script>
+const subjects = document.getElementById("Subjects");
+
+//children
+console.log(`No. of child nodes: ${subjects.children.length}`);
+
+//firstElementChild
+console.log(`First: ${subjects.firstElementChild.innerText}`);
+
+//lastElementChild
+console.log(`Last: ${subjects.lastElementChild.innerText}`);
+
+const second = document.getElementById("s2");
+
+// parentElement
+console.log(`Parent of second: ${second.parentElement}`);
+
+// nextElementSibling
+console.log(`Next sibling: ${second.nextElementSibling.innerText}`);
+
+// previousElementSibling
+console.log(`Previous sibling: ${second.previousElementSibling.innerText}`);
+</script>
+
+</body>
+</body>
