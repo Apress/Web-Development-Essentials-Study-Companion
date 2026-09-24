@@ -1,9 +1,9 @@
 # Apress Source Code
 
-This repository accompanies [*%Web Development Essentials Study Companion%*](https://www.link.springer.com/book/10.1007/%9798868826979%) by %Malhar Lathkar% (Apress, %2026%).
+This repository accompanies [*Web Development Essentials Study Companion*](https://www.link.springer.com/book/10.1007/%9798868826979%) by Malhar Lathkar (Apress, 2026).
 
 [comment]: #cover
-![Cover image](%9798868826962%.jpg)
+![Cover image](9798868826962.jpg)
 
 Download the files as a zip using the green button, or clone the repository to your machine using Git.
 
